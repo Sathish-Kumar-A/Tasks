@@ -62,17 +62,17 @@ resume={
 
 	"Education"               : {"Agricultural and Irrigation Engineering":{"CGPA":7.5,"Year":"2017-2021"},"HSC":{"CGPA":9.6,"Year":2017},"SSLC":{"CGPA":9.7,"Year":2015}},
 
-	"Software Projects"       : ["Library Management Application","Tic Tac Toe game","Hangman Game","Height Unit convertor(GUI Based)"], 
+	"SoftwareProjects"       : ["Library Management Application","Tic Tac Toe game","Hangman Game","Height Unit convertor(GUI Based)"], 
 
-	"Academic Projects"       : ["DESIGN OF SOLAR SESAME WINNOWER","AGRO GENIE- PROJECT PRESENTATION","DEVELOPMENT OF 3D PRINTED MULCHING FILM"],
+	"AcademicProjects"       : ["DESIGN OF SOLAR SESAME WINNOWER","AGRO GENIE- PROJECT PRESENTATION","DEVELOPMENT OF 3D PRINTED MULCHING FILM"],
 
-	"Technical Skills"        : ["python","OOPS","HTML 5","CSS 3","JavaScript","Digital Marketing","MS Office","Problem Solving"],
+	"TechnicalSkills"        : ["python","OOPS","HTML 5","CSS 3","JavaScript","Digital Marketing","MS Office","Problem Solving"],
 
-	"Soft Skills"             : ["Communication","Management","Teamwork","Interactive","Leadership","Adaptability"],
+	"SoftSkills"             : ["Communication","Management","Teamwork","Interactive","Leadership","Adaptability"],
 
-	"Languages Known"         : ["Tamil","English"],
+	"LanguagesKnown"         : ["Tamil","English"],
 
-	"Awards and Achievements" : ["Winner of “KATRADHU TAMIZH” in Techofes 18","Winner of Intercollege variety competition in New college, Chennai","Runner up of “KATRADHU TAMIZH” in QUANTA 19"],
+	"AwardsAndAchievements" : ["Winner of “KATRADHU TAMIZH” in Techofes 18","Winner of Intercollege variety competition in New college, Chennai","Runner up of “KATRADHU TAMIZH” in QUANTA 19"],
 
 	"Hobbies"                 : ["Browsing","Reading","Dance","Writing Lyrics","Listening Songs"]
 }
