@@ -1,0 +1,84 @@
+1) For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+var obj = [
+          { person: "Name 1", age: "2", company: "GUVI" },
+          { person: "Name 2", age: "5", company: "GUVI geek" },
+          { person: "Name 3", age: "8", company: "GUVI geek network" },
+        ];
+ForEach Loop:
+
+obj.forEach(function(objects,index){
+    console.log(objects["person"],objects["age"],objects["company"]);
+    
+});
+Output:
+	Name 1 2 GUVI
+        Name 2 5 GUVI geek
+        Name 3 8 GUVI geek network
+---------------------------------------------------------------
+For Loop:
+
+for(var i=0;i<obj.length;i++){
+    console.log(obj[i].person,obj[i].age,obj[i].company);
+}
+Output:
+	Name 1 2 GUVI
+        Name 2 5 GUVI geek
+        Name 3 8 GUVI geek network
+----------------------------------------------------------------
+For In Loop:
+
+for(var i in obj){
+    console.log(obj[i].person,obj[i].age,obj[i].company);
+}
+
+Output:
+	Name 1 2 GUVI
+        Name 2 5 GUVI geek
+        Name 3 8 GUVI geek network
+----------------------------------------------------------------
+For Of Loop:
+
+for(var i of obj){
+    console.log(i.person,i.age,i.company);
+}
+Output:
+	Name 1 2 GUVI
+        Name 2 5 GUVI geek
+        Name 3 8 GUVI geek network
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2) Create your own resume data in JSON format
+
+
+resume={
+ 	"name"                    : "Sathish Kumar",
+
+	"Qualification"           : "B.E Agricultural and Irrigation Engineering",
+
+	"College"                 : "College of Engineering, Guindy",
+
+	"Certifications"          : ["GETTING STARTED WITH PYTHON","PYTHON DATA STRUCTURES","PYTHON PROGRAMMING WORKSHOP","IT TECHNICAL FUNDAMENTALS","FULL STACK PROGRAMMING WITH PYTHON","JAVSCRIPT"],
+
+	"Education"               : {"Agricultural and Irrigation Engineering":{"CGPA":7.5,"Year":"2017-2021"},"HSC":{"CGPA":9.6,"Year":2017},"SSLC":{"CGPA":9.7,"Year":2015}},
+
+	"Software Projects"       : ["Library Management Application","Tic Tac Toe game","Hangman Game","Height Unit convertor(GUI Based)"], 
+
+	"Academic Projects"       : ["DESIGN OF SOLAR SESAME WINNOWER","AGRO GENIE- PROJECT PRESENTATION","DEVELOPMENT OF 3D PRINTED MULCHING FILM"],
+
+	"Technical Skills"        : ["python","OOPS","HTML 5","CSS 3","JavaScript","Digital Marketing","MS Office","Problem Solving"],
+
+	"Soft Skills"             : ["Communication","Management","Teamwork","Interactive","Leadership","Adaptability"],
+
+	"Languages Known"         : ["Tamil","English"],
+
+	"Awards and Achievements" : ["Winner of “KATRADHU TAMIZH” in Techofes 18","Winner of Intercollege variety competition in New college, Chennai","Runner up of “KATRADHU TAMIZH” in QUANTA 19"],
+
+	"Hobbies"                 : ["Browsing","Reading","Dance","Writing Lyrics","Listening Songs"]
+}
+
+// I gave spaces for easier understanding.
+
+
+
+}
