@@ -76,9 +76,3 @@ resume={
 
 	"Hobbies"                 : ["Browsing","Reading","Dance","Writing Lyrics","Listening Songs"]
 }
-
-// I gave spaces for easier understanding.
-
-
-
-}
