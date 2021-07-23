@@ -1,0 +1,32 @@
+1) List 5 difference between Browser JS(console) v Nodejs
+ browser js:
+	It runs javascript in the browsers.
+	It is basically used on the client side.
+	This can add HTML and play with DOM.
+	Javascript can run in any browser engine as like JS core in safari and Spidermonkey in Firefox.
+	Some of the javascript frameworks are RamdaJS, TypedJS, etc.
+	It is the upgraded version of ECMA script that uses Chrome’s V8 engine written in C++.
+ Node.js:
+	It runs javascript outside the browser.
+	It is used on the server side and but used sometimes in client side.
+	Nodejs does not have capability to add HTML tags.
+	Nodejs can only run in V8 engine of google chrome.
+	Some of the Nodejs modules are Lodash, express etc. These modules are to be imported from npm.
+	Nodejs is written in C, C++ and Javascript.
+
+2) Summarization of how browser renders a website?
+	Browser is composed of bindings,platform,rendering part and javascript VM. where bindings and platform parts of browser deals with os requirements and rendering part carry out works like parsing,layout,painting.
+	Parsing is the representation of HTML in DOM tree.HTML parsing involves tokenization and tree construction. HTML tokens include start and end tags, as well as attribute names and values.  Parsing can continue when a CSS file is encountered, but <script> tags—particularly those without an async or defer attribute—blocks rendering, and pauses parsing of HTML.
+	Render Tree- while parsing if a CSS file is encountered means then the render tree make it as CSSOM tree to the element and combines both DOM and CSSOM to provide an actual representation on screen.
+	Layout computes where a node will be on the screen.
+	In Paint Section, it creates layers by incremental process which builds up over 12 phases, then it produces bitmap from each layer which is uploaded to the GPU as a texture. While combining all these textures by rendering we will get the output on the screen.
+4) Execute the below code and write your description in txt file
+        typeof(1)		- "number"
+        typeof(1.1)		- "number"
+        typeof('1.1')		- "string"
+        typeof(true)		- "boolean"
+        typeof(null)		- "object"
+        typeof(undefined)	- "undefined"
+        typeof([])		- "object"
+        typeof({})		- "object"
+        typeof(NaN)		- "number"
