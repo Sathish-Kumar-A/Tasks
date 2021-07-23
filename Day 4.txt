@@ -1,0 +1,48 @@
+1) How to compare two JSON have the same properties without order?
+    var obj1 = { name: "Person 1", age:5 };
+    var obj2 = { age:5, name: "Person 1" };
+
+  we can use stringify() function to compare the objects as it converts the object to string format then it is compared whether it is equal or not.but order of keys/properties of the object is important if the order is same means the stringify function returns true else returns false.
+
+
+
+2)
+Flags of all countries:
+
+<html>
+    <script >
+        var xhr=new XMLHttpRequest();
+        xhr.open("GET","https://restcountries.eu/rest/v2/all");
+        xhr.onload=function(){
+            var t=JSON.parse(this.response);
+            for(var x in t){
+                console.log(t[x].flag)
+            }
+        }
+        xhr.onerror=function(){
+            console.log("Error",this.statusText);
+        }
+        xhr.send();
+    </script>
+</html>
+-----------------------------------------------------------
+3)
+Name,Region, Sub-Region, Population of all Countries
+
+<html>
+    <script >
+        var xhr=new XMLHttpRequest();
+        xhr.open("GET","https://restcountries.eu/rest/v2/all");
+        xhr.onload=function(){
+            var t=JSON.parse(this.response);
+            for(var x in t){
+                console.log(t[x].name,t[x].region,t[x].subregion,t[x].population)
+            }
+        }
+        xhr.onerror=function(){
+            console.log("Error",this.statusText);
+        }
+        xhr.send();
+    </script>
+</html>
+------------------------------------------------------------
