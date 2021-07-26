@@ -1,0 +1,6 @@
+HTTP 1.1
+ This protocol sends request and receives for every image or a element at a time.
+ loading of pages is slow
+HTTP 2
+ This protocol sends multiple request over a single TCP connection.
+ Loading of pages is fast
