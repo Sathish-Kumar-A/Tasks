@@ -1,0 +1,418 @@
+1)  Do the below programs in anonymous function & IIFE
+
+a) Print odd numbers in an array
+
+Using Anonymous function
+_________________________________________________
+
+var odd=function(array){
+	let arr=[]; // The array which will store the odd numbers
+	for(var x of array){
+		if(x%2!==0){
+			arr.push(x);
+		}	
+	}
+	return arr;
+}
+console.log(odd([0,1,2,3,4,5,6,7,8,9,13]));
+________________________________________________
+
+using IIFE
+
+___________________________________________
+
+(function(array){
+	let arr=[]; // The array which will store the odd numbers
+	for(var x of array){
+		if(x%2!==0){
+			arr.push(x);
+		}	
+	}
+	console.log(arr);
+})([0,1,2,3,4,5,6,7,8,9,13])
+
+___________________________________________________________________________________________________________________________________
+
+b) Convert all the strings to title caps in a string array
+
+Using Anonymous Function
+____________________________________
+var titleCaps=function(array){
+    for(var x in array){
+        array[x]=array[x].toLowerCase();
+        array[x]=array[x].charAt(0).toUpperCase()+array[x].slice(1);
+        }    
+        return array;
+    };
+console.log(titleCaps(["iam","sathish","of","batch-26"]));
+______________________________________
+Using IIFE
+_____________________________________
+
+(function(array){
+    for(var x in array){
+        array[x]=array[x].toLowerCase();
+        array[x]=array[x].charAt(0).toUpperCase()+array[x].slice(1);
+        }    
+        console.log(array);
+    }(["iam","sathish","of","batch-26"]);
+
+_______________________________________________________________________________________________________________________________________
+
+c) Sum of all numbers in an array
+
+Using Anonymous Function
+_________________________________________________
+var summation=function(array){
+    let sum=0;
+    for(var x of array){
+        sum+=x;
+    }
+    return sum;
+};
+console.log(summation([1,2,3,4,5,6,7]));
+_________________________________________________
+
+Using IIFE
+___________________________________________
+(function(array){
+    let sum=0;
+    for(var x of array){
+        sum+=x;
+    }
+    console.log(sum);
+}([1,2,3,4,5,6,7]);
+
+__________________________________________________________________________________________________________________________________________________
+d) Return all the prime numbers in an array
+
+Using Anonymous function
+___________________________________________________
+
+var prime=function(array){
+        let arr=[]; // The array which will store the prime numbers
+        
+        // This outer loop takes each and every element of the array one by one
+        
+        for(var i=0;i<array.length;i++){
+            
+            // Checking whether the array element is not 1 or 0
+            
+            if(array[i]!==1 && array[i]!==0){
+                let count=0;
+
+                // This inner loop divides the outer loop element from 2 to half of it's own
+
+                for(var j=2;j<(Math.floor(array[i]/2)+1);j++){
+
+                    // if any number divisible by inner loop element means then increase the count
+
+                if(array[i]%j===0){
+                    count+=1;
+                }
+            }
+            // since prime is divisible by 1 and it's own number and both is not included in our inner loop. So if the count is 0 means it is a prime number it will be added to our array(arr).
+
+            if(count===0){
+                arr.push(array[i]);
+            }
+            }
+        }
+        return arr;
+    };
+console.log(prime([0,1,2,3,4,5,6,7,8,9,13]));
+
+_______________________________________________________
+
+Using IIFE
+
+_______________________________________________________
+(function(array){
+        let arr=[]; // The array which will store the prime numbers
+        
+        // This outer loop takes each and every element of the array one by one
+        
+        for(var i=0;i<array.length;i++){
+            
+            // Checking whether the array element is not 1 or 0
+            
+            if(array[i]!==1 && array[i]!==0){
+
+                let count=0;
+
+                // This inner loop divides the outer loop element from 2 to half of it's own
+
+                for(var j=2;j<(Math.floor(array[i]/2)+1);j++){
+
+                    // if any number divisible by inner loop element means then increase the count
+
+                if(array[i]%j===0){
+
+                    count+=1;
+                }
+            }
+
+            // since prime is divisible by 1 and it's own number and both is not included in our inner loop. So if the count is 0 means it is a prime number it will be added to our array(arr).
+
+            if(count===0){
+
+                arr.push(array[i]);
+            }
+            }
+        }
+        console.log(arr);
+    })([0,1,2,3,4,5,6,7,8,9,13]);
+
+
+_______________________________________________________________________________________________________________________________________________________________
+e) Return all the palindromes in an array
+
+Using Anonymous Function
+________________________________________________
+var palindrome=function(array){
+    let arr=[];
+    for(var x in array){
+        let str="";
+        for(var y=array[x].length-1;y>=0;y--){
+            str+=array[x][y];
+        }
+        if(str==array[x]){
+            arr.push(str);
+        }
+    }
+    return arr;
+};
+console.log(palindrome(["sathish","redivider","kumar","deified","reviver"]));
+__________________________________________________
+
+using IIFE
+__________________________________________________
+(function(array){
+    let arr=[];
+    for(var x in array){
+        let str="";
+        for(var y=array[x].length-1;y>=0;y--){
+            str+=array[x][y];
+        }
+        if(str==array[x]){
+            arr.push(str);
+        }
+    }
+    console.log(arr);
+}(["sathish","redivider","kumar","deified","reviver"]);
+___________________________________________________________________________________________________________________________________________________________________
+f) Return median of two sorted arrays of same size
+
+Using Anonymous Function
+___________________________________
+var median=function(array,array1){
+    let arr=[];
+    let i=0;
+    let j=0;
+    while (i<array.length && j<array1.length){
+        if(array[i]<array1[j]){
+            arr.push(array[i]);
+            i+=1;
+        }
+        else{
+            arr.push(array1[j]);
+            j+=1;
+        }
+    }
+    while (i<array.length){
+         arr.push(array[i]);
+            i+=1;
+    }
+    while(j<array1.length){
+        arr.push(array1[j]);
+            j+=1;
+    }
+    if(arr.length%2===0){
+        return arr[Math.floor(arr.length/2)+1];
+    }
+    else{
+        return (arr[Math.floor(arr.length/2)+1]+arr[Math.floor(arr.length/2)])/2;
+    }
+};
+console.log(median([1,3,5,7,9,11],[2,4,6,8,10]));
+_______________________________________
+
+Using IIFE
+_______________________________________
+(function(array,array1){
+    let arr=[];
+    let i=0;
+    let j=0;
+    while (i<array.length && j<array1.length){
+        if(array[i]<array1[j]){
+            arr.push(array[i]);
+            i+=1;
+        }
+        else{
+            arr.push(array1[j]);
+            j+=1;
+        }
+    }
+    while (i<array.length){
+         arr.push(array[i]);
+            i+=1;
+    }
+    while(j<array1.length){
+        arr.push(array1[j]);
+            j+=1;
+    }
+    if(arr.length%2===0){
+        return arr[Math.floor(arr.length/2)+1];
+    }
+    else{
+        return (arr[Math.floor(arr.length/2)+1]+arr[Math.floor(arr.length/2)])/2;
+    }
+}([1,3,5,7,9,11],[2,4,6,8,10]);
+_______________________________________________________________________________________________________________________________________
+
+g) Remove duplicates from an array
+
+Using Anonymous Function
+____________________________________
+
+var removeDuplicates=function(array){
+    let setArray=[...new Set(array)]
+    return setArray
+};
+console.log(removeDuplicates([1,2,1,2,4,5,5,6,7]));
+_____________________________________
+Using IIFE
+_____________________________________
+(function(array){
+    let setArray=[...new Set(array)]
+    return setArray
+}([1,2,1,2,4,5,5,6,7]);
+________________________________________________________________________________________________________________________________________
+
+h) Rotate an array by k times
+
+Using Anonymous Function
+___________________________________
+var arrayRotation=function(array,k){
+    for(var i=0;i<k;i++){
+        let popper=array.pop();
+        array.unshift(popper);
+    }
+    return array;
+};
+console.log(arrayRotation([1,2,3,4,5,6,7],3));
+____________________________________
+Using IIFE
+____________________________________
+(function(array,k){
+    for(var i=0;i<k;i++){
+        let popper=array.pop();
+        array.unshift(popper);
+    }
+    return array;
+}([1,2,3,4,5,6,7],3);
+__________________________________________________________________________________________________________________________________________
+
+2) Do the below programs in arrow functions
+
+a) Print odd numbers in an array
+
+Using Arrow function
+_________________________________________________
+
+var odd=(array)=>{
+	let arr=[]; // The array which will store the odd numbers
+	for(var x of array){
+		if(x%2!==0){
+			arr.push(x);
+		}	
+	}
+	return arr;
+}
+console.log(odd([0,1,2,3,4,5,6,7,8,9,13]));
+_________________________________________________________
+b) Convert all the strings to title caps in a string array
+
+Using Arow Function
+____________________________________
+var titleCaps=(array)=>{
+    for(var x in array){
+        array[x]=array[x].toLowerCase();
+        array[x]=array[x].charAt(0).toUpperCase()+array[x].slice(1);
+        }    
+        return array;
+    };
+console.log(titleCaps(["iam","sathish","of","batch-26"]));
+________________________________________________________________
+
+c) Sum of all numbers in an array
+
+Using Arrow Function
+_________________________________________________
+var summation=(array)=>{
+    let sum=0;
+    for(var x of array){
+        sum+=x;
+    }
+    return sum;
+};
+console.log(summation([1,2,3,4,5,6,7]));
+_________________________________________________
+d) Return all the prime numbers in an array
+
+Using Arrow function
+___________________________________________________
+
+var prime=(array)=>{
+        let arr=[]; // The array which will store the prime numbers
+        
+        // This outer loop takes each and every element of the array one by one
+        
+        for(var i=0;i<array.length;i++){
+            
+            // Checking whether the array element is not 1 or 0
+            
+            if(array[i]!==1 && array[i]!==0){
+                let count=0;
+
+                // This inner loop divides the outer loop element from 2 to half of it's own
+
+                for(var j=2;j<(Math.floor(array[i]/2)+1);j++){
+
+                    // if any number divisible by inner loop element means then increase the count
+
+                if(array[i]%j===0){
+                    count+=1;
+                }
+            }
+            // since prime is divisible by 1 and it's own number and both is not included in our inner loop. So if the count is 0 means it is a prime number it will be added to our array(arr).
+
+            if(count===0){
+                arr.push(array[i]);
+            }
+            }
+        }
+        return arr;
+    };
+console.log(prime([0,1,2,3,4,5,6,7,8,9,13]));
+
+_______________________________________________________
+e) Return all the palindromes in an array
+
+Using Arrow Function
+________________________________________________
+var palindrome=(array)=>{
+    let arr=[];
+    for(var x in array){
+        let str="";
+        for(var y=array[x].length-1;y>=0;y--){
+            str+=array[x][y];
+        }
+        if(str==array[x]){
+            arr.push(str);
+        }
+    }
+    return arr;
+};
+console.log(palindrome(["sathish","redivider","kumar","deified","reviver"]));
+__________________________________________________
