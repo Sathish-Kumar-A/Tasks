@@ -1,0 +1,32 @@
+1.error spot
+https://day11-first.netlify.app/
+
+2.error spot 2
+https://day11-second.netlify.app/
+
+3.Contact Form
+https://day11-contact-page.netlify.app/
+
+4.List display
+https://day11-lists-page.netlify.app/
+
+5.link open in separate tab
+https://day11-linkpage.netlify.app/
+
+6.radio buttons
+https://day11-radiobutton.netlify.app/
+
+7.design form
+https://day11-designform.netlify.app/
+
+8.table creation
+https://day11-table.netlify.app/
+
+9.default values
+https://day11-defaultvalues.netlify.app/
+
+10.highlight
+https://day11-highlight.netlify.app/
+
+11.input elements
+https://day11-forminputs.netlify.app/
