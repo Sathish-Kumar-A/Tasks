@@ -1,0 +1,782 @@
+1. Fix the bugs in below snippet
+
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </div>
+    </div>
+    </body>
+  </html>
+______________________________________________________________________________________________
+2. Try the below one
+
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Guvi</p>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
+
+____________________________________________________________________________________________________
+3.Design a contact us form with all fields as required.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <style>
+        label{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        h1{
+            font-size: 2em;
+            color:black;
+        }
+        #borderspace{
+            background-color: #87CEEB	;
+            width:600px;
+            height:550px;
+            margin:0 auto;
+            border-radius: 20px;
+        }
+        h2,h4,form{
+            padding: 20px;
+        }
+        .namebox,.emailbox,#issue-select,#textarea{
+            width:300px;
+            height:40px;
+            border:2px solid black;
+            border-radius:4px;
+    
+        }
+        #issue-select{
+            width:310px;
+            height:50px;
+        }
+        
+        #textarea{
+            margin-top:20px;
+            height:100px;
+        }
+        h2{
+            width:70px;
+            padding:10px;
+            font-size:1em;
+            background-color: #00FF00;
+            border-radius:8px;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        h2:hover{
+            background-color: #008000;
+            color:grey;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><center>Contact Us</center></h1>
+    <hr>
+    <br>
+    <div id="borderspace">
+        <h4><center>For all queries and doubts email us below</center></h4>
+        <center><form action="">
+            <div>
+                <input type="text" class="namebox" name="Name" placeholder="Name"><br><br>
+                <input type="text" class="emailbox" name="Email" placeholder="Email ID"><br><br>
+                <select name="Issue" id="issue-select">
+                    <option value="issue1">Issue 1</option>
+                    <option value="issue2">Issue 2</option>
+                    <option value="issue3">Issue 3</option>
+                    <option value="issue4">Issue 4</option>
+                </select><br><br>
+                <textarea name="" id="textarea" cols="30" rows="10" placeholder="Provide more information"></textarea>
+            </div>
+            <h2><a href="#">Send</a></h2>
+        </form></center>
+    </div>
+</body>
+</html>
+
+_______________________________________________________________________________________________________________
+4. Use certain HTML elements to display the following in a HTML page.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+<body>
+   <ul>
+       <li>Programming Language</li>
+       <br>
+       <ul>
+           <li>JavaScript</li>
+           <ol type="a">
+               <li>Angular</li>
+               <li>React</li>
+               <li>Vue</li>
+           </ol>
+           <br>
+           <li>Python</li>
+           <ol type="a">
+               <li>Django Framework</li>
+               <li>Flask Framework</li>
+           </ol>
+           <br>
+           <li>Java</li>
+           <ol type="a">
+               <li>Spring</li>
+               <li>Maven</li>
+               <li>Hibernate</li>
+           </ol>
+       </ul><br>
+       <li>Database</li>
+       <ul>
+           <li>MySQL</li>
+           <li>MongoDB</li>
+           <li>Cansandra</li>
+       </ul>
+   </ul> 
+</body>
+</html>
+________________________________________________________________________________________________________
+5. Create an element that helps you to open the https://google.com in separate new tab.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Opening</title>
+    <style>
+        h2{
+            display:inline-block;
+        }
+        button{
+            width:100px;
+            height:40px;
+            margin-left:40px;
+            background-color: teal;
+            color:white;
+            font-family: "open sans";
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: turquoise;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Click the button : </h2>
+        <a href="https://google.com/" target="_blank"><button>Google</button></a>
+    </div>
+</body>
+</html>
+___________________________________________________________________________________________________________
+6. In the form, add two radio buttons with grouping them for employee type(Salaried and own business)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons</title>
+    <style>
+        h2{
+            display: inline-block;
+        }
+        input{
+            margin-left:20px;
+        }
+        label{
+            background-color: teal;
+            color:white;
+            padding:10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+    <h2>Employment Type : </h2>
+    <input type="radio"  name="radio1">
+    <label for="paid">Salaried</label>
+    <input type="radio"  name="radio1">
+    <label for="selfPaid">Own Buisness</label>
+    </form>
+</body>
+</html>
+_____________________________________________________________________________________________________
+7. Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Form</title>
+    <style>
+        section{
+            margin:0 auto;
+            border:3px solid black;
+            width:720px;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .padding{
+            padding:20px;
+        }
+        h1{
+            display: inline-block;
+            margin-left:130px;
+            padding:10px;
+            background-color:red;
+            color:white;
+        }
+        input[type="text"]{
+            background: transparent;
+            width:300px;
+            border:none;
+            border-bottom: 3px solid #000000;
+        }
+        [name="lastname"]{
+            margin-left:50px;
+        }
+        [for="lastname"]{
+            margin-left:280px;
+        }
+        input[name="address"]{
+            width:550px;
+        }
+        input[name="city"],input[name="state"],input[name="Zip"]{
+            width:150px;
+        }
+        .margin{
+            margin-left:40px;
+        }
+        .marginstate{
+            margin-left:170px;
+        }
+        .marginZip{
+            margin-left:155px;
+        }
+        #bold{
+            font-weight: bold;
+        }
+        [name="1year"],[name="2year"]{
+            margin-left:50px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="padding">
+            <h1>Yes! I want to subscribe to <i>Mag-O-Zine</i></h1>
+            <input type="text" name="firstname">
+            <input type="text" name="lastname">
+            <br>
+            <label for="firstname">First Name</label>
+            <label for="lastname">Last Name</label><br>
+            <input type="text" name="address"><br>
+            <label for="address">Address</label><br>
+            <input type="text" name="city">
+            <input type="text" name="state" class="margin">
+            <input type="text" name="Zip" class="margin"><br>
+            <label for="city">City</label>
+            <label for="state" class="marginstate">State</label>
+            <label for="Zip" class="marginZip">Zip</label><br><br>
+            <div id="bold">
+                <label for="subscribe">Subscribe for:</label>
+                <input type="checkbox" name="1year">
+                <label for="1year">1 year($19.95)</label>
+                <input type="checkbox" name="2year">
+                <label for="2year">2 year($35.00)</label>
+                <h3>Send me more Information about:</h3>
+                <input type="checkbox" name="Computerzine">
+                <label for="computerzine">Computer-Zine</label><br>
+                <input type="checkbox" name="Fishingzine">
+                <label for="Fishingzine">Fishing-Zine</label><br>
+                <input type="checkbox" name="CatOzine">
+                <label for="CatOzine">Cat-O-Zine</label>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+______________________________________________________________________________________________________
+8. Use the table tag to design given image Click here.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        p{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;;
+        }
+        table{
+            width:600px;
+            margin:0 auto;
+        }
+        table,td{
+            border:2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td{
+            padding:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Health Chart</p>
+    <table>
+        <tr>
+            <td rowspan="2">State of Health</td>
+            <td colspan="2">Fasting value</td>
+            <td>After Eating</td>
+        </tr>
+        <tr>
+            <td>Minimum</td>
+            <td>Maximum</td>
+            <td>2 hours after eating</td>
+        </tr>
+        <tr>
+            <td>Healthy</td>
+            <td>70</td>
+            <td>100</td>
+            <td>Less than 140</td>
+        </tr>
+        <tr>
+            <td>Pre-Diabetes</td>
+            <td>101</td>
+            <td>126</td>
+            <td>140 to 200</td>
+        </tr>
+        <tr>
+            <td>Diabetes</td>
+            <td>More than 126</td>
+            <td>N/A</td>
+            <td>More than 200</td>
+        </tr>
+    </table>
+</body>
+</html>
+_____________________________________________________________________________________
+9. Write HTML input tags snippet to show default values for all Form elements.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tags</title>
+</head>
+<style>
+    body{
+        font-family: "open sans";
+    }
+    h1{
+        text-align: center;
+    }
+    fieldset{
+        width:700px;
+        margin:0 auto;
+    }
+    .padding{
+        padding: 10px;;
+    }
+    input{
+        width: 100px;;
+        height:25px;
+        border: 2px solid grey;
+        border-radius: 3px;
+    }
+    label,legend{
+        font-weight:bold;
+    }
+    input[name="firstname"]{
+        margin-right:100px;
+        width:150px;
+    }
+    input[name="lastname"]{
+        width:150px;
+    }
+    input[type="date"]{
+        margin-right:30px;
+        width:150px;
+    }
+    input[name="city"]{
+        margin-right:30px;
+    }
+    label[for="qualification"]{
+        margin-left:130px;
+    }
+    input[name=country]{
+        width:150px;
+    }
+    input[name="qualification"]{
+        width:170px;
+    }
+    input[name="marks"]{
+        width:70px;
+    }
+    select{
+        width:70px;
+        border:2px solid teal;
+        background-color: teal;
+        color:white;
+        border-radius:2px;
+        margin-right:80px;
+    }
+    input[type="radio"]{
+        height:15px;
+    }
+    input[type="checkbox"]{
+        height:15px;
+        width:50px;
+    }
+    .image{
+        display: inline-block;
+        float:right;
+    }
+    input[type="file"]{
+        border:None;
+        width:200px;
+    }
+    label[for="Languages"]{
+        display: inline-block;
+    }
+    .Languages{
+        margin-left:60px;
+        margin-top:10px;
+        display: inline-block;
+    }
+    textarea{
+        width:100%;
+        height:90px;
+    }
+    input[type="submit"]{
+        width:100px;
+        height:40px;
+        border: 1px solid;
+        background-color: teal;
+        color:white;
+        margin:0 45%;
+        font-weight:bold;
+    }
+    input[type="submit"]:hover{
+        background-color: aqua;
+        color:gray;
+        cursor: pointer;
+        box-shadow: 5px 10px 10px grey;
+    }
+</style>
+<body>
+    <form action="">
+        <h1>Job Application</h1>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div class="padding">
+                <label for="firstname">First Name : </label>
+                <input type="text" name="firstname" value="John">
+                <label for="lastname">Last Name :</label>
+                <input type="text" name="lastname" value="Durai">
+                <br><br>
+                <label for="DOB">Date Of Birth : </label>
+                <input type="date" id="calendar" value="2000-07-22" min="1990-01-01" max="2005-01-01">
+                <label for="city">City : </label>
+                <input type="text" name="city" value="Chennai">
+                <label for="state">State :</label>
+                <input type="text" name="state" value="Tamil Nadu"><br><br>
+                <label for="country">Country :</label>
+                <input type="text" name="country" value="India">
+                <label for="qualification">Qualification : </label>
+                <input list="degree" name="qualification" placeholder="Choose your Degree">
+                <datalist id="degree">
+                    <option value="B.E">B.E</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="MBA">MBA</option>
+                    <option value="B.A">B.A</option>
+                </datalist>
+                <br><br>
+                <label for="CGPA">Degree Marks : </label>
+                <input type="text" name="marks" value="8.5 or 85">
+                <select name="markmethods" id="cgpapercentile">
+                    <option value="CGPA">CGPA</option>
+                    <option value="Percentage">Percentage</option>
+                </select>
+                <label for="passedout">Year of Passed Out:</label>
+                <input type="month" id="monthcalendar" value="2021-05" min="2017-05" max="2022-05">
+                <br><br>
+                <label for="Employed">Currently Employed :</label>
+                <input type="radio" name="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="no">
+                <label for="no">No</label><br><br>
+                <label for="Languages">Languages Known :</label><br>
+                <div class="Languages">
+                    <input type="checkbox" name="python">
+                    <label for="python">Python</label><br>
+                    <input type="checkbox" name="JavaScript">
+                    <label for="JavaScript">JavaScript</label><br>
+                    <input type="checkbox" name="Java">
+                    <label for="Java">Java</label><br>
+                    <input type="checkbox" name="C">
+                    <label for="C">C</label>
+                </div>
+                <div class="image">
+                    <label for="image">College ID img :</label>
+                    <input type="file">
+                </div>
+
+                <br><br>
+                <textarea name="" id="" cols="30" rows="10">eg. I'm an Software Engineer</textarea>
+            </div>
+        </fieldset><br>
+        <div class="submit">
+            <input type="submit" name="submit" value="Submit">
+        </div>
+    </form>    
+</body>
+</html>
+__________________________________________________________________________________________________________________
+10. In your, HTML page add the below line and Highlight it without using any CSS.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight</title>
+</head>
+<body>
+    <p>
+        HTML is the language for describing the structure of Web pages. HTML gives authors the means to: Publish online documents with headings, text, tables, lists, photos, etc. <font color="red">HTML and CSS is Awesome.</font>Retrieve online information via hypertext links, at the click of a button.</p>
+</body>
+</html>
+____________________________________________________________________________________________________________________________
+11. Create an HTML page, which should contain all types of input elements.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tags</title>
+</head>
+<style>
+    body{
+        font-family: "open sans";
+        background-color: #f1f5f8;
+    }
+    h1{
+        text-align: center;
+    }
+    fieldset{
+        width:700px;
+        margin:0 auto;
+    }
+    .padding{
+        padding: 10px;
+    }
+    input{
+        width: 100px;;
+        height:25px;
+        border: 2px solid grey;
+        border-radius: 3px;
+    }
+    label,legend{
+        font-weight:bold;
+    }
+    input[name="firstname"]{
+        margin-right:100px;
+        width:150px;
+    }
+    input[name="lastname"]{
+        width:150px;
+    }
+    input[type="date"]{
+        margin-right:30px;
+        width:150px;
+    }
+    input[name="city"]{
+        margin-right:30px;
+    }
+    label[for="qualification"]{
+        margin-left:130px;
+    }
+    input[name=country]{
+        width:150px;
+    }
+    input[name="qualification"]{
+        width:170px;
+    }
+    input[name="marks"]{
+        width:70px;
+    }
+    select{
+        width:70px;
+        border:2px solid teal;
+        background-color: teal;
+        color:white;
+        border-radius:2px;
+        margin-right:80px;
+    }
+    input[type="radio"]{
+        height:15px;
+    }
+    input[type="checkbox"]{
+        height:15px;
+        width:50px;
+    }
+    .image{
+        display: inline-block;
+        float:right;
+    }
+    input[type="file"]{
+        border:None;
+        width:200px;
+    }
+    label[for="Languages"]{
+        display: inline-block;
+    }
+    .Languages{
+        margin-left:60px;
+        margin-top:10px;
+        display: inline-block;
+    }
+    textarea{
+        width:100%;
+        height:90px;
+    }
+    input[type="submit"]{
+        width:100px;
+        height:40px;
+        border: 1px solid;
+        background-color: teal;
+        color:white;
+        margin:0 45%;
+        font-weight:bold;
+    }
+    input[type="submit"]:hover{
+        background-color: aqua;
+        color:gray;
+        cursor: pointer;
+        box-shadow: 5px 10px 10px grey;
+    }
+</style>
+<body>
+    <form action="">
+        <h1>Job Application</h1>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div class="padding">
+                <label for="firstname">First Name : </label>
+                <input type="text" name="firstname" placeholder="sathish">
+                <label for="lastname">Last Name :</label>
+                <input type="text" name="lastname" placeholder="kumar">
+                <br><br>
+                <label for="DOB">Date Of Birth : </label>
+                <input type="date" id="calendar" value="2000-07-22" min="1990-01-01" max="2005-01-01">
+                <label for="city">City : </label>
+                <input type="text" name="city">
+                <label for="state">State :</label>
+                <input type="text" name="state"><br><br>
+                <label for="country">Country :</label>
+                <input type="text" name="country">
+                <label for="qualification">Qualification : </label>
+                <input list="degree" name="qualification" placeholder="Choose your Degree">
+                <datalist id="degree">
+                    <option value="B.E">B.E</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="MBA">MBA</option>
+                    <option value="B.A">B.A</option>
+                </datalist>
+                <br><br>
+                <label for="CGPA">Degree Marks : </label>
+                <input type="text" name="marks">
+                <select name="markmethods" id="cgpapercentile">
+                    <option value="CGPA">CGPA</option>
+                    <option value="Percentage">Percentage</option>
+                </select>
+                <label for="passedout">Year of Passed Out:</label>
+                <input type="month" id="monthcalendar" value="2021-05" min="2017-05" max="2022-05">
+                <br><br>
+                <label for="Employed">Currently Employed :</label>
+                <input type="radio" name="yes">
+                <label for="yes">Yes</label>
+                <input type="radio" name="yes">
+                <label for="no">No</label><br><br>
+                <label for="Languages">Languages Known :</label><br>
+                <div class="Languages">
+                    <input type="checkbox" name="python">
+                    <label for="python">Python</label><br>
+                    <input type="checkbox" name="JavaScript">
+                    <label for="JavaScript">JavaScript</label><br>
+                    <input type="checkbox" name="Java">
+                    <label for="Java">Java</label><br>
+                    <input type="checkbox" name="C">
+                    <label for="C">C</label>
+                </div>
+                <div class="image">
+                    <label for="image">College ID img :</label>
+                    <input type="file">
+                </div>
+
+                <br><br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Gives us a self introduction"></textarea>
+            </div>
+        </fieldset><br>
+        <div class="submit">
+            <input type="submit" name="submit" value="Submit">
+        </div>
+    </form>    
+</body>
+</html>
+____________________________________________________________________________________________________________________
