@@ -4,3 +4,14 @@ HTTP 1.1
 HTTP 2
  This protocol sends multiple request over a single TCP connection.
  Loading of pages is fast
+
+JavaScript Object
+	Js Object is a kind of datatype whre the values are stored as key value pair. object's values are mutuable so that we can change or create new key value
+"e.g: Object["key"]=new value or changing value".This will create or change the values. for deleting using delete keyword we can delete the certain key value pair.
+The value of the Object can be any datatype. In ES6 using spread operator we can change or modify the object.
+
+Object example:
+	var assignment={
+	"title":"First_assignment",
+	"status":"completed"
+}
